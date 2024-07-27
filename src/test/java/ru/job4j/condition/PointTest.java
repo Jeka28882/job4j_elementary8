@@ -46,4 +46,14 @@ public class PointTest {
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+    @Test
+    public void when10toMinus30then2() {
+        double expected =4;
+        int x1 = 1;
+        int y1 = 0;
+        int x2 = -3;
+        int y2 = 0;
+        double output = Point.distance(x1, y1, x2, y2);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
