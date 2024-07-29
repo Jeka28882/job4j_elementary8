@@ -5,11 +5,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MaxTest {
     @Test
-    void whenMax1To2Then2() {
-        int left = 1;
-        int right = 2;
+    void whenMax4To5Then2() {
+        int left = 4;
+        int right = 5;
         int result = Max.max(left, right);
-        int expected = 1;
+        int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
     @Test
