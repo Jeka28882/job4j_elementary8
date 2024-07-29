@@ -6,9 +6,9 @@ public class DummyBot {
         if ("Hi, Bot.".equals(question)) {
             result = "Hi, SmartAss.";
         } else if ("Bye.".equals(question)) {
-            result = "See you later."
-
-            ;
+            result = "See you later.";
+        } else if ("what is by city".equals(question)) {
+                result = "Arhangelsk";
         }
         return result;
     }
@@ -17,6 +17,8 @@ public class DummyBot {
         String result = DummyBot.answer("Hi, Bot.");
         System.out.println(result);
         result = DummyBot.answer("Bye.");
+        System.out.println(result);
+        result = DummyBot.answer("what is by city");
         System.out.println(result);
         result = DummyBot.answer("Gud.");
         System.out.println(result);

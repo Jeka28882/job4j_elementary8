@@ -27,4 +27,12 @@ class DummyBotTest {
         String expected = "I don't know. Please, ask another question.";
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenCytyBot() {
+        String input = "what is by city";
+        String result = DummyBot.answer(input);
+        String expected = "Arhangelsk";
+        assertThat(result).isEqualTo(expected);
+    }
 }
